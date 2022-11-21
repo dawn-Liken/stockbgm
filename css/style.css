@@ -32,7 +32,7 @@ nav .content .links{
   color: #fff;
   font-size: 30px;
   font-weight: 600;
-vertical-align: middle;
+
 }
 .content .links li{
   list-style: none;
@@ -259,6 +259,10 @@ vertical-align: middle;
   padding: 0 20px;
   text-align: center;
   transform: translate(-50%, -50%);
+}
+.text h1{
+  font-size: 20px;
+  margin: 5px 0;
 }
 .text h2{
   font-size: 15px;

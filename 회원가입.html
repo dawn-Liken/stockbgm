@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>스톡비잼 | StockBgm</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/signin-login.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+
+<body>
+  <div class="wrapper">
+    <nav>
+      <input type="checkbox" id="show-search">
+      <input type="checkbox" id="show-menu">
+      <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+      <div class="content">
+      <div class="logo"><a href="index.html">StockBgm</a></div>
+        <ul class="links">
+          <li><a href="about스톡비잼.html">About 스톡비잼</a></li>
+
+          <li>
+            <a href="#" class="desktop-link">Bgm 거래</a>
+            <input type="checkbox" id="show-features">
+            <label for="show-features">Bgm 거래</label>
+            <ul>
+              <li><a href="bgm구매.html">구매하기</a></li>
+              <li><a href="bgm판매.html">판매하기</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="desktop-link">중고 Bgm 거래</a>
+            <input type="checkbox" id="show-services">
+            <label for="show-services">중고 Bgm 거래</label>
+            <ul>
+              <li><a href="중고bgm구매.html">구매하기</a></li>
+              <li><a href="중고bgm판매.html">판매하기</a></li>
+              <li>
+                <a href="#" class="desktop-link">NFT 보증서(예정)</a>
+                <input type="checkbox" id="show-items">
+                <label for="show-items">보증서(예정)</label>
+                <ul>
+                  <li><a href="nft보증서발행.html">보증서 발행 신청</a></li>
+                  <li><a href="nft보증서확인.html">보증서 확인하기</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><a href="커뮤니티.html">커뮤니티</a></li>
+        </ul>
+      </div>
+      <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
+      <form action="#" class="search-box">
+        <input type="text" placeholder="검색어를 입력하세요" required>
+        <button type="submit" class="go-icon"><i class="fas fa-long-arrow-alt-right"></i></button>
+      </form>
+    </nav>
+  </div>
+
+  <div class="signin">
+    <form id="form">
+        <h1 id="title">통합 회원가입</h1>
+        <br>
+        <div id="content">
+            <div id="input">
+                <div> 계정 : <input type="email" id="signUpEmail" placeholder="계정을 입력하세요" /></div>
+                <br>
+                <div> 비밀번호 : <input type="password" id="signUpPassword" placeholder="비밀번호를 입력하세요"/></div>
+            </div>
+            <br>
+            <div id="btn1">
+                <button type="submit" id="signUpButton" >회원가입 하기</button>
+            </div>
+            <br>
+            <div id="btn2">
+                <button type="button" onclick="location.href='로그인.html';">로그인 하러 가기</button>
+            </div>
+        </div>
+
+    </form>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyDDv9EiV7ooGqLxXvGwS1z8yB2quX0ONZw",
+          authDomain: "dawnliken-stockbgm-3c0e0.firebaseapp.com",
+          projectId: "dawnliken-stockbgm-3c0e0",
+          storageBucket: "dawnliken-stockbgm-3c0e0.appspot.com",
+          messagingSenderId: "71919725632",
+          appId: "1:71919725632:web:5861ce3efe4bfe377f03a5",
+          measurementId: "G-DHEP19VYQ8"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+
+        import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-auth.js";
+
+        const auth = getAuth();
+
+        document.getElementById('signInButton').addEventListener('click', (event) => {
+            event.preventDefault()
+            const signInEmail = document.getElementById('signInEmail').value
+            const signInPassword = document.getElementById('signInPassword').value
+            signInWithEmailAndPassword(auth, signInEmail, signInPassword)
+                .then((userCredential) => {
+                    // Signed in 
+                    console.log(userCredential)
+                    const user = userCredential.user;
+                    // ...
+                })
+                .catch((error) => {
+                    console.log('로그인 실패')
+                    const errorCode = error.code;
+                    const errorMessage = error.message;
+                });
+
+        })
+
+
+        console.log('hello world')
+        console.log(app)
+    </script>
+  </div>
+
+</body>
+</html>
