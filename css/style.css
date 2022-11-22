@@ -250,7 +250,31 @@ nav .content .links{
   }
 }
 
-.text{
+.content-text-index{
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  z-index: -1;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  font-family: system-ui, serif;
+  font-size: 1.5rem;
+  padding: 2rem;
+  border-radius: 1rem;
+  background: #e5e5e5;
+}
+.content-text-index h1{
+  font-size: 20px;
+  margin: 5px 0;
+}
+.content-text-index h2{
+  font-size: 15px;
+  margin: 5px 0;
+}
+
+.content-text-about{
   position: absolute;
   top: 50%;
   left: 50%;
@@ -260,11 +284,11 @@ nav .content .links{
   text-align: center;
   transform: translate(-50%, -50%);
 }
-.text h1{
+.content-text-about h1{
   font-size: 20px;
   margin: 5px 0;
 }
-.text h2{
+.content-text-about h2{
   font-size: 15px;
   margin: 5px 0;
 }
