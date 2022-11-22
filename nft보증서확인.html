@@ -7,6 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>스톡비잼 | StockBgm</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/modal-style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 </head>
 
@@ -28,6 +29,15 @@
             <ul>
               <li><a href="bgm구매.html">구매하기</a></li>
               <li><a href="bgm판매.html">판매하기</a></li>
+              <li>
+                <a href="#" class="desktop-link">NFT 보증서(예정)</a>
+                <input type="checkbox" id="show-items">
+                <label for="show-items">보증서(예정)</label>
+                <ul>
+                  <li><a href="nft보증서발행.html">보증서 발행 신청</a></li>
+                  <li><a href="nft보증서확인.html">보증서 확인하기</a></li>
+                </ul>
+              </li>
             </ul>
           </li>
           <li>
@@ -42,8 +52,8 @@
                 <input type="checkbox" id="show-items">
                 <label for="show-items">보증서(예정)</label>
                 <ul>
-                  <li><a href="nft보증서발행.html">보증서 발행 신청</a></li>
-                  <li><a href="nft보증서확인.html">보증서 확인하기</a></li>
+                  <li><a href="중고nft보증서발행.html">보증서 발행 신청</a></li>
+                  <li><a href="중고nft보증서확인.html">보증서 확인하기</a></li>
                 </ul>
               </li>
             </ul>
@@ -59,10 +69,19 @@
     </nav>
   </div>
 
-  <div class="text">
-    <h2>Responsive Dropdown Menu Bar with Searchbox</h2>
-    <h2>using only HTML & CSS - Flexbox</h2>
-  </div>
+    <div class="container">
+        <div class="interior">
+            <a class="btn" href="#open-modal">서비스 알아보기 click!</a>
+        </div>
+    </div>
+    <div id="open-modal" class="modal-window">
+      <div>
+        <a href="#" title="close" class="=modal-close">닫기</a>
+        <h1>스톡비잼 NFT 보증서</h1>
+        <div>A CSS-only modal based on the :targer pseudo-class, Hope you find it helpful.</div>
+        <br>
+      </div>
+    </div>
 
 </body>
 </html>
