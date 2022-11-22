@@ -17,7 +17,7 @@
     pointer-events: auto;
     }
 .modal-window > div {
-    width: 300px;
+    width: 280px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -30,7 +30,7 @@
     }
 
 .modal-window h1 {
-    font-size: 135%;
+    font-size: 120%;
     margin: 0 0 15px;
 }
 
