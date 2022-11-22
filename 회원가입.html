@@ -118,6 +118,7 @@
                 .then((userCredential) => {
                     console.log(userCredential)
                     alert('회원가입 성공')
+                    window.location.href = "로그인.html";
                     // Signed in 
                     const user = userCredential.user;
                     // ...
