@@ -117,12 +117,14 @@
             createUserWithEmailAndPassword(auth, signUpEmail, signUpPassword)
                 .then((userCredential) => {
                     console.log(userCredential)
+                    alert('회원가입 성공')
                     // Signed in 
                     const user = userCredential.user;
                     // ...
                 })
                 .catch((error) => {
                     console.log('회원가입 실패')
+                    alert('회원가입 실패')
                     const errorCode = error.code;
                     const errorMessage = error.message;
                     // ..
