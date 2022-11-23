@@ -169,7 +169,7 @@ a {
 }
 
 .board_view .info dl {
-    position: relative;
+    position: static;
     display: inline-block;
     padding: 0 20px;
 }
