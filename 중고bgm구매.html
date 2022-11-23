@@ -5,9 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>스톡비잼 | StockBgm</title>
+  <title>커뮤니티</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  <link rel="stylesheet" href="css/community.css">
 </head>
 
 <body>
@@ -26,7 +27,8 @@
             <input type="checkbox" id="show-features">
             <label for="show-features">Bgm 거래</label>
             <ul>
-              <li><a href="bgm구매.html">구매하기</a></li>
+              <li><a href="bgm구매.html">주문하기</a></li>
+              <li><a href="bgm주문확인.html">주문목록</a></li>
               <li><a href="bgm판매.html">판매하기</a></li>
             </ul>
           </li>
@@ -35,7 +37,7 @@
             <input type="checkbox" id="show-services">
             <label for="show-services">중고 Bgm 거래</label>
             <ul>
-              <li><a href="중고bgm구매.html">구매하기</a></li>
+              <li><a href="중고bgm구매.html">중고 Bgm 마켓</a></li>
               <li><a href="중고bgm판매.html">판매하기</a></li>
               <li>
                 <a href="#" class="desktop-link">NFT 보증서(예정)</a>
@@ -58,11 +60,80 @@
       </form>
     </nav>
   </div>
-
-  <div class="text">
-    <h2>Responsive Dropdown Menu Bar with Searchbox</h2>
-    <h2>using only HTML & CSS - Flexbox</h2>
-  </div>
-
+  
+<div class="board_wrap">
+    <div class="board_title">
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+        <strong>중고 BGM 마켓</strong>
+        <p>다른 크리에이터가 이용을 마친 BGM을 저렴하게 이용하세요.</p>
+    </div>
+    <div class="board_list_wrap">
+        <div class="board_list">
+            <div class="top">
+                <div class="num">번호</div>
+                <div class="title">제목</div>
+                <div class="writer">글쓴이</div>
+                <div class="date">작성일</div>
+                <div class="count">조회</div>
+            </div>
+            <div>
+                <div class="num">5</div>
+                <div class="title"><a href="중고bgm상세보기.html">글 제목이 들어갑니다.</a></div>
+                <div class="writer">김이름</div>
+                <div class="date">2021.1.15</div>
+                <div class="count">33</div>
+            </div>
+            <div>
+                <div class="num">4</div>
+                <div class="title"><a href="중고bgm상세보기.html">글 제목이 들어갑니다.</a></div>
+                <div class="writer">김이름</div>
+                <div class="date">2021.1.15</div>
+                <div class="count">33</div>
+            </div>
+            <div>
+                <div class="num">3</div>
+                <div class="title"><a href="중고bgm상세보기.html">글 제목이 들어갑니다.</a></div>
+                <div class="writer">김이름</div>
+                <div class="date">2021.1.15</div>
+                <div class="count">33</div>
+            </div>
+            <div>
+                <div class="num">2</div>
+                <div class="title"><a href="중고bgm상세보기.html">글 제목이 들어갑니다.</a></div>
+                <div class="writer">김이름</div>
+                <div class="date">2021.1.15</div>
+                <div class="count">33</div>
+            </div>
+            <div>
+                <div class="num">1</div>
+                <div class="title"><a href="중고bgm상세보기.html">글 제목이 들어갑니다.</a></div>
+                <div class="writer">김이름</div>
+                <div class="date">2021.1.15</div>
+                <div class="count">33</div>
+            </div>
+        </div>
+        <div class="board_page">
+            <a href="#" class="bt first"><<</a>
+            <a href="#" class="bt prev"><</a>
+            <a href="#" class="num on">1</a>
+            <a href="#" class="num">2</a>
+            <a href="#" class="num">3</a>
+            <a href="#" class="num">4</a>
+            <a href="#" class="num">5</a>
+            <a href="#" class="bt next">></a>
+            <a href="#" class="bt last">>></a>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
+</div>
 </body>
 </html>
