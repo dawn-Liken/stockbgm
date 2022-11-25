@@ -61,7 +61,7 @@
     </nav>
   </div>
   
-<div class="board_wrap">
+  <div class="board_wrap">
     <div class="board_title">
       <br>
       <br>
@@ -69,41 +69,84 @@
       <br>
       <br>
       <br>
-      <strong>BGM 주문하기</strong>
-      <p>당신이 원하는 음악을 맞춤 제작하여 당신의 컨텐츠와 어울리는 음악을 구매하세요.</p>
+        <strong>BGM 주문하기</strong>
+        <p>당신이 원하는 음악을 맞춤 제작하여 당신의 컨텐츠와 어울리는 음악을 구매하세요.</p>
     </div>
-    <div class="board_write_wrap">
-        <div class="board_write">
-            <div class="title">
+
+    <form action="/" method="/">
+      <div class="board_write_wrap">
+          <div class="board_write">
+              <div class="title">
+                  <dl>
+                      <dt>작품명</dt>
+                      <dd><input type="text" placeholder="작품명"></dd>
+                  </dl>
+              </div>
+              <div class="info">
                 <dl>
-                    <dt>제목</dt>
-                    <dd><input type="text" placeholder="제목 입력"></dd>
+                    <dt>계정</dt>
+                    <dd><input type="text" placeholder="계정"></dd>
                 </dl>
             </div>
-            <div class="info">
-                <dl>
-                    <dt>글쓴이</dt>
-                    <dd><input type="text" placeholder="글쓴이 입력"></dd>
-                </dl>
-                <dl>
-                  <dt>참고 파일 첨부</dt>
-                  <dd><a href="file-upload.html">업로드 하기</a></dd>
-                </dl>
-            </div>
-            <div class="cont">
+
+              <div class="cont">
+                <br>
+
+                <h2>곡 종류</h2>
+                <select>
+                  <option value="" disabled="" selected="">선택</option>
+                  <option value="MR">MR(반주만 있는 곡)</option>
+                  <option value="AR">AR(보컬도 있는 곡)</option>
+                </select>
+                <br>
+                <br>
+                <h2>장르</h2>
+                <select>
+                  <option value="" disabled="" selected="">선택</option>
+                  <option value="BGM">BGM</option>
+                  <option value="힙합">힙합</option>
+                  <option value="발라드">발라드</option>
+                  <option value="댄스">댄스</option>
+                  <option value="R&B">R&B</option>
+                  <option value="밴드">밴드</option>
+                  <option value="CCM">CCM</option>
+                  <option value="클래식">클래식</option>
+                  <option value="재즈">재즈</option>
+                  <option value="트로트">트로트</option>
+                  <option value="뮤지컬">뮤지컬</option>
+                  <option value="기타">기타</option>
+                </select>
+                <br>
+                <br>
+                <h2>구매 희망 BGM 설명</h2>
                 <textarea placeholder="내용 입력"></textarea>
-            </div>
-        </div>
-        <div class="bt_wrap">
-            <a href="bgm주문확인.html" class="on">등록</a>
-            <a href="bgm주문확인.html">취소</a>
-        </div>
-    </div>
+                <br>
+                <h2>구매 희망 가격</h2>
+                <h3><input type="구매희망가격"> 원</h3>
+                <br>
+                <h2>(선택) 참고 자료 첨부</h2>
+                <h3><a href="file-upload.html">업로드하기</a></h3>
+                <br>
+                <h2>개인정보 활용 동의</h2>
+                <input type="checkbox" value="개인정보활용동의">
+                <h3><a href="#">내용 보기</a></h3>
+                <br>
+                <h2>(선택) 작품 홍보 활용 동의</h2>
+                <input type="checkbox" value="작품홍보활용동의">
+                <h3><a href="#">내용 보기</a></h3>
+              </div>
+          </div>
+          <div class="bt_wrap">
+              <a href="bgm상세보기.html" class="on">등록</a>
+              <a href="bgm주문확인.html">목록</a>
+          </div>
+      </div>
+    </form>
     <br>
     <br>
     <br>
     <br>
     <br>
-</div>
+  </div>
 </body>
 </html>
